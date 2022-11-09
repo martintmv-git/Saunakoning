@@ -1,0 +1,1120 @@
+/*------------*/
+
+
+@font-face {
+    font-family: 'allroundgothicw01-bookregular';
+    src: url('all_round_gothic_w01_book.woff2') format('woff2'), url('all_round_gothic_w01_book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'allroundgothicw01-bookregular';
+
+}
+
+
+/* Navigation */
+
+
+/*------------*/
+
+.navbar {
+    transition: all 0.3s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-family: "AllRoundGothicW01-Book";
+}
+
+.sticky-nav {
+    padding-top: 0 !important;
+    background: #000;
+    z-index: 1;
+}
+
+.logo-img {
+    width: 250px;
+    height: auto;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background: #000;
+    font-size: 3rem;
+    transition: 0.7s;
+    font-family: "AllRoundGothicW01-Book";
+}
+
+.side-nav li {
+    margin-left: 10%;
+    margin-right: 20px;
+}
+
+.close-sideNav,
+.close-btn {
+    width: 30px;
+    opacity: 0.8;
+}
+
+.nav-link {
+    color: #fff;
+    transition: 0.5s all;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1.5px #ff9933;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+}
+
+.side-nav .nav-link {
+    color: rgb(209, 209, 209);
+    font-size: 2rem;
+}
+
+::placeholder {
+    color: white;
+}
+
+.side-nav .nav-link:hover {
+    color: #fff;
+}
+
+.search-form {
+    border-bottom: 1.5px solid #fff;
+}
+
+.search-form input {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.search-form input:focus {
+    outline: none;
+    border: 0;
+}
+
+#searchBtn {
+    background: transparent;
+    border: none;
+}
+
+.search-btn-img {
+    width: 25px;
+}
+
+.ourSaunasLink {
+    font-size: 1.4rem;
+}
+
+.menuBtn:hover:after {
+    transform: scaleX(0);
+}
+
+.menu-icon {
+    width: 40px;
+}
+
+
+/*------------------*/
+
+
+/* Background Video */
+
+
+/*------------------*/
+
+#bg-video {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/*--------------*/
+
+
+/* Hero Section */
+
+
+/*--------------*/
+
+.hero-section {
+    color: #fff;
+    padding-left: 6rem;
+    margin-top: 50vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    font-family: "AllRoundGothicW01-Book";
+}
+
+.hero-title {
+    font-size: 2.5rem;
+}
+
+.hero-sub {
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.arrow {
+    width: 15px;
+    position: absolute;
+}
+
+.arrow-next {
+    bottom: -6rem;
+    right: 6rem;
+}
+
+.arrow-prev {
+    left: 3rem;
+}
+
+.continue-btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #000;
+    background: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s;
+}
+
+.continue-btn:hover {
+    letter-spacing: 3.5px;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.social-icons img {
+    height: 25px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+/*------------------*/
+
+
+/* Media Queries */
+
+
+/*------------------*/
+
+@media(min-width: 532px) {
+    .hero-section {
+        margin-top: 20vh;
+    }
+}
+
+@media(min-width: 768px) {
+    .hero-section {
+        padding-left: 8rem;
+        margin-top: 15vh;
+    }
+    .arrow-prev {
+        left: 5rem;
+    }
+    .side-nav .nav-link {
+        font-size: 2.5rem;
+    }
+    .side-nav {
+        max-width: 50%;
+    }
+    .hero-title {
+        font-size: 4rem;
+    }
+}
+
+@media(min-width: 992px) {
+    .side-nav {
+        max-width: 40%;
+    }
+    .side-nav .nav-link {
+        font-size: 3rem;
+    }
+    .ourSaunasLink {
+        font-size: 1.8rem;
+    }
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+.card {
+    background: none;
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+.card-img-top {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card-title {
+    text-decoration: underline #ff9933;
+}
+
+.btn {
+    color: #fff;
+    transition: 0.5s all;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1.5px #ff9933;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.btn:hover:after {
+    transform: scaleX(1);
+}
+
+.container {
+    padding-top: 200px;
+    font-family: "AllRoundGothicW01-Book";
+}
+
+
+/*Product end*/
+
+.bg-cover {
+    background-size: cover !important;
+}
+
+.jumbotron-img {
+    height: 1000px;
+}
+
+.jumbotron {
+    position: relative;
+    top: 10%;
+}
+
+.btn-book {
+    text-decoration: none;
+    font-weight: 470;
+    background: rgba(250, 250, 250, 0.3);
+    color: black;
+    border: 2px solid #ff9933;
+    border-radius: 20px;
+}
+
+.btn-book:hover {
+    transition: 0.5s ease;
+    background-color: white;
+    color: black;
+    border: 2px solid #ff9933;
+}
+
+
+/* Cards */
+
+.dark {
+    background: #0A0A0A;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.postcard {
+    flex-wrap: wrap;
+    display: flex;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    border: 1px solid #ff9933;
+}
+
+.postcard.dark {
+    background-color: #0A0A0A;
+}
+
+.postcard .t-dark {
+    color: black;
+}
+
+.postcard a {
+    color: inherit;
+}
+
+.postcard h1,
+.postcard .h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.postcard .small {
+    font-size: 80%;
+}
+
+.postcard .postcard__title {
+    font-size: 1.75rem;
+}
+
+.postcard .postcard__img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.postcard .postcard__img_link {
+    display: contents;
+}
+
+.postcard__text {
+    background-color: #0A0A0A;
+}
+
+.postcard .postcard__bar {
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #0A0A0A;
+    transition: width 0.2s ease;
+}
+
+.postcard .postcard__text {
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.postcard .postcard__preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    height: 100%;
+}
+
+.postcard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #0A0A0A, transparent 50%);
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.postcard:hover .postcard__bar {
+    width: 100px;
+}
+
+@media screen and (min-width: 769px) {
+    .postcard {
+        flex-wrap: inherit;
+    }
+    .postcard .postcard__title {
+        font-size: 2rem;
+    }
+    .postcard .postcard__tagbox {
+        justify-content: start;
+    }
+    .postcard .postcard__img {
+        max-width: 300px;
+        max-height: 100%;
+        transition: transform 0.3s ease;
+    }
+    .postcard .postcard__text {
+        padding: 3rem;
+        width: 100%;
+    }
+    .postcard .media.postcard__text:before {
+        content: "";
+        position: absolute;
+        display: block;
+        background: #0A0A0A;
+        top: -20%;
+        height: 130%;
+        width: 55px;
+    }
+    .postcard:hover .postcard__img {
+        transform: scale(1.1);
+    }
+    .postcard:nth-child(2n+1) {
+        flex-direction: row;
+    }
+    .postcard:nth-child(2n+0) {
+        flex-direction: row-reverse;
+    }
+    .postcard:nth-child(2n+1) .postcard__text::before {
+        left: -12px !important;
+        transform: rotate(4deg);
+    }
+    .postcard:nth-child(2n+0) .postcard__text::before {
+        right: -12px !important;
+        transform: rotate(-4deg);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .postcard__text {
+        padding: 2rem 3.5rem;
+    }
+    .postcard__text:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: -20%;
+        height: 130%;
+        width: 55px;
+    }
+    .postcard.dark .postcard__text:before {
+        background: #0A0A0A;
+    }
+}
+
+
+/* COLORS */
+
+.postcard .postcard__tagbox .red.play:hover {
+    background: #ff9933;
+}
+
+.red .postcard__title:hover {
+    color: #ff9933;
+}
+
+.red .postcard__bar {
+    background-color: #ff9933;
+}
+
+.red::before {
+    background-image: linear-gradient(-30deg, black, transparent 50%);
+}
+
+.red:nth-child(2n)::before {
+    background-image: linear-gradient(30deg, black, transparent 50%);
+}
+
+@media screen and (min-width: 769px) {
+    .red::before {
+        background-image: linear-gradient(-80deg, black, transparent 50%);
+    }
+    .red:nth-child(2n)::before {
+        background-image: linear-gradient(80deg, black, transparent 50%);
+    }
+}
+
+
+/*Booking form*/
+
+.popup {
+    background: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%) scale(0);
+    width: 450px;
+    height: 550px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: #262626;
+    box-shadow: 38px 38px 56px #1e1e1e, -25px -25px 38px #1e1e1e;
+    z-index: 1;
+}
+
+label {
+    background: none;
+}
+
+.popup .close-form {
+    position: absolute;
+    right: 24px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 0px 5px 7px 5px;
+    background: #292929;
+    box-shadow: 5px 5px 15px #1e1e1e, -5px -5px 15px #1e1e1e;
+}
+
+.close {
+    cursor: pointer;
+    background: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    bottom: 32%;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.pop-h1 {
+    background: #262626;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.input-field {
+    background: #262626;
+}
+
+.input-field .validate {
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ff9933;
+    margin-bottom: 15px;
+    color: #bfc0c0;
+    background: #262626;
+    box-shadow: inset 5px 5px 5px #232323, inset -5px -5px 5px #292929;
+    outline: none;
+}
+
+.first-button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    border: 1px solid #ff9933;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.first-button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+.second-button {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 40px;
+    border: 1px solid #ff9933;
+    background: #262626;
+    box-shadow: 8px 8px 15px #202020, -8px -8px 15px #2c2c2c;
+    transition: box-shadow .35s ease !important;
+    outline: none;
+}
+
+.second-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.masthead {
+    height: 100vh;
+    background-image: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid white;
+}
+
+.font-weight-light {
+    color: white;
+    font-size: 100px;
+}
+
+.d-block {
+    height: 1000px;
+}
+
+.carousel {
+    width: 1300px;
+}
+
+.detail-txt {
+    color: white;
+}
+
+.detail-txt h1 {
+    font-size: 60px;
+}
+
+.detail-txt p {
+    font-size: 35px;
+}
+
+.detail-txt h5 {
+    font-size: 30px;
+    border-left: 4px solid rgb(255, 177, 33);
+}
+
+.radius {
+    width: 120px;
+}
+
+.close-detail {
+    position: relative;
+    left: 20px;
+    padding: 20px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*home*/
+
+.hd-video {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hd-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hd-video .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hd-video .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.about {
+    font-family: "AllRoundGothicW01-Book";
+}
+
+.about .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.about .text h6 {
+    color: #ff9933;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.about .text h2 {
+    color: #f7f5f4;
+    border-bottom: 1px solid #ff9933;
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+
+.about .text p {
+    color: #f7f5f4;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.about .text a {
+    background: #0A0A0A;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #ff9933;
+}
+
+.about .text a:hover {
+    background: white;
+    transition: .6s ease;
+    color: black;
+    border: 1px solid #ff9933;
+}
+
+.img-fluid {
+    border-radius: 20px;
+}
+
+.discovery {
+    font-family: "AllRoundGothicW01-Book";
+}
+
+.discovery .text {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.discovery .text h6 {
+    color: #ff9933;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.discovery .text h2 {
+    font-weight: 700;
+    font-size: 2.7rem;
+    border-bottom: 1px solid #ff9933;
+}
+
+.discovery .text p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.discovery .text a {
+    background: #0A0A0A;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #ff9933;
+}
+
+.discovery .text a:hover {
+    background: white;
+    transition: .6s ease;
+    color: black;
+}
+
+#option {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 425%;
+    right: 65%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.right {
+    position: absolute;
+    top: 425%;
+    right: 47%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.right-end {
+    position: absolute;
+    top: 425%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.opacity:hover {
+    opacity: 1.0;
+}
+
+@media screen and (max-width: 528px) {
+    .hd-video {
+        position: relative;
+        background-color: black;
+        height: 130vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+
+/*Panels*/
+
+.panels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel {
+    background: none;
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    /* Safari transitionend event.propertyName === flex */
+    /* Chrome + FF transitionend event.propertyName === flex-grow */
+    transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel3 {
+    background-image: url(https://images.unsplash.com/photo-1582088506970-81cfad247a8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+}
+
+.panel4 {
+    background-image: url(https://images.unsplash.com/photo-1617372607364-f55cb6fa0502?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80);
+}
+
+.panel5 {
+    background-image: url(https://images.unsplash.com/photo-1580628330485-5ff21de29e23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);
+}
+
+
+/* Flex Items */
+
+.panel>* {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel a {
+    color: white;
+    width: 20%;
+}
+
+.panel p {
+    text-transform: uppercase;
+    font-family: "AllRoundGothicW01-Book";
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .panel p {
+        font-size: 1em;
+    }
+}
+
+
+/*Panels end*/
+
+.get-in-touch {
+    font-family: "AllRoundGothicW01-Book";
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.get-in-touch .title-contact {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3.2em;
+    line-height: 48px;
+    padding-bottom: 48px;
+    color: #ff9933;
+    
+  
+}
+
+.input-text {
+    background-color: #000;
+    color: white;
+}
+
+.contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+}
+
+.contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #ff9933;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contact-form .input-text:focus {
+    outline: none;
+}
+
+.contact-form .input-text:focus+.label,
+.contact-form .input-text.not-empty+.label {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+}
+
+.contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: white;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.contact-form .submit-btn {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: 1px solid #ff9933;
+    width: 200px;
+    cursor: pointer;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #ff9933;
+    transition: 0.5s ease;
+}
+
+footer {
+    font-family: "AllRoundGothicW01-Book";
+    font-size: 20px;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 800px;
+    height: 540px !important;
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    margin-top: 0px;
+}
+
+#myCarousel .carousel-indicators>li {
+    width: 100px;
+}
+
+#myCarousel .carousel-indicators li img {
+    display: block;
+    opacity: 0.5;
+}
+
+#myCarousel .carousel-indicators li.active img {
+    opacity: 1;
+}
+
+.buy {
+    text-decoration: none;
+    background: none;
+    border: 1px solid #ff9933;
+    color: white;
+    border-radius: 10px;
+}
+
+.buy:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s ease;
+}
